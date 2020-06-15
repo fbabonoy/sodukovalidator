@@ -8,16 +8,17 @@
 5  7  4  1  8  6  2  9  3  
 9  2  8  3  5  7  4  6  1  
 
-Column: 700000f4f000 valid
+
 Column: 700000e49000 valid
+Column: 700000f4f000 valid
 Column: 700000fd2000 valid
 Column: 7000010d8000 valid
 Column: 700001055000 valid
 Column: 70000115b000 valid
 Column: 7000011de000 valid
+Column: 700001261000 valid
 Row: 700001367000 valid
 Row: 7000012e4000 valid
-Column: 700001261000 valid
 Row: 7000013ea000 valid
 Row: 70000146d000 valid
 Row: 7000014f0000 valid
