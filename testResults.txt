@@ -1,0 +1,42 @@
+8  4  5  6  3  2  1  7  9  
+7  3  2  9  1  8  6  5  4  
+1  9  6  7  4  5  3  2  8  
+6  8  3  5  7  4  9  1  2  
+4  5  7  2  9  1  8  3  6  
+2  1  9  8  6  3  5  4  7  
+3  6  1  4  2  9  7  8  5  
+5  7  4  1  8  6  2  9  3  
+9  2  8  3  5  7  4  6  1  
+
+Column: 700003c5e000 valid
+Column: 700003ce1000 valid
+Column: 700003d64000 valid
+Column: 700003de7000 valid
+Column: 700003e6a000 valid
+Column: 700003eed000 valid
+Column: 700003f70000 valid
+Column: 700003ff3000 valid
+Column: 700004076000 valid
+Row: 7000040f9000 valid
+Row: 70000417c000 valid
+Row: 7000041ff000 valid
+Row: 700004282000 valid
+Row: 700004388000 valid
+Row: 700004511000 valid
+Row: 70000448e000 valid
+Subgrid: 700004617000 valid
+Subgrid: 70000469a000 valid
+Subgrid: 700004823000 valid
+Subgrid: 7000048a6000 valid
+Subgrid: 7000047a0000 valid
+Subgrid: 700004929000 valid
+Row: 700004305000 valid
+Row: 70000440b000 valid
+Subgrid: 7000049ac000 valid
+Subgrid: 70000471d000 valid
+Subgrid: 700004594000 valid
+
+Column: valid
+Row: valid
+Subgrid: valid
+Sudoku puzzle: valid
