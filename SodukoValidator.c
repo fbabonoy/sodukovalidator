@@ -19,7 +19,7 @@ typedef struct {
     int bottomRow;
     int leftColumn;
     int rightColumn;
-} 
+}
 index;
 
 // threads for checking
@@ -42,7 +42,7 @@ void *col_runner(void *param) {
             isValid[value - 1] = 1;
         }
     }
-    
+
 
     self = pthread_self();
     colValidator[lc] = 1;
@@ -82,12 +82,12 @@ void *row_runner(void *param) {
 void *subGrid_Array(void *param) {
     pthread_t self;
     index *params = (index *)param;
-    
+
     int tr = params->topRow;
     int br = params->bottomRow;
     int lc = params->leftColumn;
     int rc = params->rightColumn;
-    
+
     // printf("%d , %d, %d , %d", tr, br, lc, rc);
     bool isValid[9] = {0};
     int r;
@@ -126,7 +126,7 @@ int main() {
     outputFile = fopen("testResults.txt", "w");
 
     pthread_t thread_id[NUM_CHILD_THREADS];
-    
+
     int row, col;
 
     for (row = 0; row < 9; row++) {
@@ -174,13 +174,13 @@ int main() {
 
     for (i = 0; i < 3; i++) {
         // index *columnData = (index *)malloc(sizeof(index));
-        
+
         top = i * 3;
         bottom = top + 2;
         int i;
 
         for (i = 0; i < 3; i++){
-            
+
             // printf("\n%d , %d , %d , %d\n\n", top,bottom, i * 3, (i * 3) + 2 );
             subGridArray[k].topRow = top;
             subGridArray[k].bottomRow = bottom;
@@ -188,7 +188,7 @@ int main() {
             subGridArray[k].rightColumn = (i * 3) + 2;
             pthread_create(&(thread_id[k + 18]), NULL, subGrid_Array, &(subGridArray[k]));
             k++;
-            
+
         }
     }
 
@@ -196,13 +196,13 @@ int main() {
     for(i = 0; i < 27; i++) {
         pthread_join(thread_id[i], NULL);
     }
-    
-    
+
+
     for(i = 8; i < 9; i++) {
         if(colValidator[i] == 0) {
             printf("COLUMNS INVALID\n");
             return EXIT_SUCCESS;
-        } 
+        }
         else if (rowValidator[i] == 0) {
             printf("ROW INVALID\n");
             return EXIT_SUCCESS;
